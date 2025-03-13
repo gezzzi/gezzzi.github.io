@@ -67,7 +67,7 @@ export default function Projects() {
           <motion.div
             key={project.id}
             variants={item}
-            className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+            className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full"
             whileHover={{ y: -5 }}
           >
             <div className="relative w-full h-48">
@@ -79,7 +79,7 @@ export default function Projects() {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div className="p-6">
+            <div className="p-6 flex flex-col flex-grow">
               <h2 className="text-xl font-bold mb-2 text-gray-800 dark:text-gray-200 text-center">{project.title}</h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
@@ -92,7 +92,7 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-              <div className="text-center">
+              <motion.div className="text-center mt-auto">
                 <motion.a
                   href={project.url}
                   target="_blank"
@@ -103,7 +103,7 @@ export default function Projects() {
                 >
                   サイトを見る
                 </motion.a>
-              </div>
+              </motion.div>
             </div>
           </motion.div>
         ))}
