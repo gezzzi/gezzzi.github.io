@@ -7,24 +7,27 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "ポートフォリオサイト",
-      description: "Next.js、Tailwind CSS、Framer Motionを使用して作成したポートフォリオサイト。",
-      tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
-      image: "https://placehold.co/600x400/e2e8f0/1e293b?text=ポートフォリオサイト"
+      title: "ブログサイト",
+      description: "副業の始め方、稼ぎ方などを解説するブログサイト。仮想通貨やAI活用など最新の副業情報も提供しています。",
+      tech: ["Next.js", "Tailwind CSS", "Vercel"],
+      image: "https://placehold.co/600x400/e2e8f0/1e293b?text=テックブログ",
+      url: "https://www.techstepsite.com/"
     },
     {
       id: 2,
-      title: "ECサイト",
-      description: "オンラインショッピングのためのECサイト。商品一覧、詳細ページ、カート機能を実装。",
-      tech: ["React", "Redux", "Node.js", "MongoDB"],
-      image: "https://placehold.co/600x400/e2e8f0/1e293b?text=ECサイト"
+      title: "画像圧縮アプリ",
+      description: "オンラインで簡単に画像を圧縮できるツール。品質を保ちながらファイルサイズを最適化します。",
+      tech: ["Next.js", "Shadcn UI", "Vercel", "browser-image-compression"],
+      image: "https://placehold.co/600x400/e2e8f0/1e293b?text=画像圧縮アプリ",
+      url: "https://image-compression-tool-orpin.vercel.app/"
     },
     {
       id: 3,
-      title: "SNSアプリ",
-      description: "リアルタイムメッセージング機能を持つSNSアプリケーション。",
-      tech: ["Vue.js", "Firebase", "Tailwind CSS"],
-      image: "https://placehold.co/600x400/e2e8f0/1e293b?text=SNSアプリ"
+      title: "性格診断アプリ",
+      description: "質問に答えることで性格タイプを診断できるインタラクティブなウェブアプリケーション。",
+      tech: ["Next.js", "Shadcn UI", "Framer Motion", "Vercel", "anthropic-sdk"],
+      image: "https://placehold.co/600x400/e2e8f0/1e293b?text=性格診断アプリ",
+      url: "https://personality-test-app-eta.vercel.app/"
     },
   ];
 
@@ -77,7 +80,7 @@ export default function Projects() {
               />
             </div>
             <div className="p-6">
-              <h2 className="text-xl font-bold mb-2 text-gray-800 dark:text-gray-200">{project.title}</h2>
+              <h2 className="text-xl font-bold mb-2 text-gray-800 dark:text-gray-200 text-center">{project.title}</h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((tech) => (
@@ -89,13 +92,18 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-              <motion.button
-                className="bg-blue-600 dark:bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                詳細を見る
-              </motion.button>
+              <div className="text-center">
+                <motion.a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-blue-600 dark:bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  サイトを見る
+                </motion.a>
+              </div>
             </div>
           </motion.div>
         ))}
