@@ -10,7 +10,7 @@ export default function Projects() {
       title: "ブログサイト",
       description: "副業の始め方、稼ぎ方などを解説するブログサイト。仮想通貨やAI活用など最新の副業情報も提供しています。",
       tech: ["Next.js", "Tailwind CSS", "Vercel"],
-      image: "https://placehold.co/600x400/e2e8f0/1e293b?text=テックブログ",
+      image: "/blog-project.jpg",
       url: "https://www.techstepsite.com/"
     },
     {
@@ -18,7 +18,7 @@ export default function Projects() {
       title: "画像圧縮アプリ",
       description: "オンラインで簡単に画像を圧縮できるツール。品質を保ちながらファイルサイズを最適化します。",
       tech: ["Next.js", "Shadcn UI", "Vercel", "browser-image-compression"],
-      image: "https://placehold.co/600x400/e2e8f0/1e293b?text=画像圧縮アプリ",
+      image: "/image-compression-project.webp",
       url: "https://image-compression-tool-orpin.vercel.app/"
     },
     {
@@ -26,7 +26,7 @@ export default function Projects() {
       title: "性格診断アプリ",
       description: "質問に答えることで性格タイプを診断できるインタラクティブなウェブアプリケーション。",
       tech: ["Next.js", "Shadcn UI", "Framer Motion", "Vercel", "anthropic-sdk"],
-      image: "https://placehold.co/600x400/e2e8f0/1e293b?text=性格診断アプリ",
+      image: "/personality-test-project.webp",
       url: "https://personality-test-app-eta.vercel.app/"
     },
   ];
