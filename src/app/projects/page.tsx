@@ -11,7 +11,7 @@ export default function Projects() {
       description: "副業の始め方、稼ぎ方などを解説するブログサイト。仮想通貨やAI活用など最新の副業情報も提供しています。",
       tech: ["Next.js", "Tailwind CSS", "Vercel"],
       image: "/blog-project.jpg",
-      url: "https://www.techstepsite.com/"
+      url: "https://blog.techstepsite.com/"
     },
     {
       id: 2,
