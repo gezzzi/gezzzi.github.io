@@ -21,4 +21,4 @@ Next.jsを使ったポートフォリオサイト
 ## Demo
 以下のURLで公開しています：
 
-https://gezzzi.github.io/
+https://techstepsite.com
