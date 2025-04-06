@@ -19,7 +19,7 @@ export default function Projects() {
       description: "オンラインで簡単に画像を圧縮できるツール。品質を保ちながらファイルサイズを最適化します。",
       tech: ["Next.js", "Shadcn UI", "Vercel", "browser-image-compression"],
       image: "/image-compression-project.webp",
-      url: "https://image-compression-tool-orpin.vercel.app/"
+      url: "https://image-compression.techstepsite.com/"
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ export default function Projects() {
       description: "質問に答えることで性格タイプを診断できるインタラクティブなウェブアプリケーション。",
       tech: ["Next.js", "Shadcn UI", "Framer Motion", "Vercel", "anthropic-sdk"],
       image: "/personality-test-project.webp",
-      url: "https://personality-test-app-eta.vercel.app/"
+      url: "https://personality-analysis.techstepsite.com/"
     },
   ];
 
