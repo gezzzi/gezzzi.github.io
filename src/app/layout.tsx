@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100">
+      <body className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100">
         <header className="sticky top-0 z-10 backdrop-blur-md bg-white/70 dark:bg-gray-900/70 shadow-sm">
           <div className="max-w-6xl mx-auto px-4 py-4">
             <nav>

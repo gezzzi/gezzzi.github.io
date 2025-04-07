@@ -23,11 +23,19 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: "性格診断アプリ",
+      title: "AI性格診断アプリ",
       description: "質問に答えることで性格タイプを診断できるインタラクティブなウェブアプリケーション。",
       tech: ["Next.js", "Shadcn UI", "Framer Motion", "Vercel", "anthropic-sdk"],
       image: "/personality-test-project.webp",
       url: "https://personality-analysis.techstepsite.com/"
+    },
+    {
+      id: 4,
+      title: "AI英会話アプリ",
+      description: "AIと会話しながら英語を学べるアプリケーション。日本語入力でも会話が続けられるため、初心者にも優しい設計です。",
+      tech: ["Next.js", "Tailwind CSS", "Vercel", "OpenAI API"],
+      image: "/english-trainer-project.jpg",
+      url: "https://english-trainer.techstepsite.com/"
     },
   ];
 
